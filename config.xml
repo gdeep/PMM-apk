@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+    <widget xmlns = "http://www.w3.org/ns/widgets"
+        xmlns:gap = "http://phonegap.com/ns/1.0"
+        id        = "com.pmm"
+        versionCode = "10"
+        version   = "1.0.0">
+    <name>PMM</name>
+    <description>
+        Production Monitoring on Mobile
+    </description>
+    <preference name="stay-in-webview" value="true" />
+    <preference name="UIWebViewBounce" value="false" />
+    <author>
+        eBay
+    </author>
+
+</widget>
