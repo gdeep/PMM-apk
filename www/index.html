@@ -1,8 +1,12 @@
 <html>
+<head>
 <script type="text/javascript" src="PushNotification.js"></script>
 <script>
-	alert("HI!")
-	document.addEventListener("deviceready", onDeviceReady, false)
+    alert("HI!")
+
+    function onBodyLoad() {   
+        document.addEventListener("deviceready", onDeviceReady, false);
+    }
 
 	function onNotificationAPN(event) {
 	    if (event.alert) {
@@ -99,4 +103,6 @@
 		}
 	}
 </script>
+</head>
+<body onload = "onBodyLoad()">
 </html>
