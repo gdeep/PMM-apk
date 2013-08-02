@@ -4,11 +4,6 @@
 <script>
     alert("HI!")
 
-    function onBodyLoad() {  
-        alert("MY"); 
-        document.addEventListener("deviceready", onDeviceReady, false);
-    }
-
 	function onNotificationAPN(event) {
 	    if (event.alert) {
 	        navigator.notification.alert(event.alert);
@@ -105,5 +100,5 @@
 	}
 </script>
 </head>
-<body onload = "onBodyLoad()"></body>
+<body onload = "onDeviceReady()"></body>
 </html>
