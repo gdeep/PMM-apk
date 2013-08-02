@@ -4,7 +4,6 @@
 <script type="text/javascript" src="js/index.js"></script>
 <script src="phonegap.js"></script>
 <script>
-    alert("HI!")
 
 	function onNotificationAPN(event) {
 	    if (event.alert) {
@@ -85,7 +84,6 @@
 	}
 
 	function onDeviceReady() {
-        alert("hi!")
         //alert(window.plugins.pushNotification)
 		window.location.href = "http://www.d-sjc-00534185.corp.ebay.com"
 		var pushNotification;
@@ -102,7 +100,6 @@
 	}
 
     function onBodyLoad() {
-        alert("BODY LOADED!")
         document.addEventListener('deviceready', onDeviceReady, false);
     }
 </script>
