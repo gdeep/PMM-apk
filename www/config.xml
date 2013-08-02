@@ -8,6 +8,7 @@
     <description>
         Production Monitoring on Mobile
     </description>
+    <gap:plugin name="com.adobe.plugins.pushplugin" />
     <preference name="stay-in-webview" value="true" />
     <preference name="UIWebViewBounce" value="false" />
     <preference name="webviewbounce" value="false" />
