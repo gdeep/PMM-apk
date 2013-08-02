@@ -84,7 +84,8 @@
 	}
 
 	function onDeviceReady() {
-		window.location.href = "http://www.d-sjc-00534185.corp.ebay.com"
+        alert("hi!")
+		//window.location.href = "http://www.d-sjc-00534185.corp.ebay.com"
 		var pushNotification;
 		pushNotification = window.plugins.pushNotification;
 
@@ -93,10 +94,9 @@
 		}
 
 		else {
-    		pushNotification.register(tokenHandler, errorHandler {"badge":"true","sound":"true","alert":"true","ecb":"onNotificationAPN"});
+            console.log("ABC")
+    		pushNotification.register(tokenHandler, errorHandler,{"badge":"true","sound":"true","alert":"true","ecb":"onNotificationAPN"});
 		}
-
-
 	}
 </script>
 </html>
