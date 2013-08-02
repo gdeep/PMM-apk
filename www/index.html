@@ -1,6 +1,7 @@
 <html>
 <head>
 <script type="text/javascript" src="PushNotification.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
 <script>
     alert("HI!")
 
@@ -18,7 +19,6 @@
 	        pushNotification.setApplicationIconBadgeNumber(successHandler, errorHandler, event.badge);
 	    }
 	}
-
 
 // Android
     function onNotificationGCM(e) {
@@ -98,7 +98,12 @@
     		pushNotification.register(tokenHandler, errorHandler,{"badge":"true","sound":"true","alert":"true","ecb":"onNotificationAPN"});
 		}
 	}
+
+    function onBodyLoad() {
+        alert("BODY LOADED!")
+        document.addEventListener('deviceready', onDeviceReady, false);
+    }
 </script>
 </head>
-<body onload = "onDeviceReady()"></body>
+<body onload = "onBodyLoad()"></body>
 </html>
