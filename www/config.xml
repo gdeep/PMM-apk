@@ -10,6 +10,7 @@
     </description>
     <preference name="stay-in-webview" value="true" />
     <preference name="UIWebViewBounce" value="false" />
+    <preference name="webviewbounce" value="false" />
     <author>
         eBay
     </author>
