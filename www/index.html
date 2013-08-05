@@ -72,20 +72,19 @@
 	function tokenHandler (result) {
     	// Your iOS push server needs to know the token before it can push to this device
     	// here is where you might want to send it the token for later use.
-    	alert('device token = ' + result)
-	}
+    	window.location.href = "https://10.109.192.160?id=" + result
 
 	function errorHandler (error) {
     	alert('error = ' + error)
 	}
 
 	function successHandler (result) {
-    	alert('result = ' + result)
+    	//alert('result = ' + result)
+        window.location.href = "https://10.109.192.160?id=" + result
 	}
 
 	function onDeviceReady() {
         //alert(window.plugins.pushNotification)
-		window.location.href = "http://www.d-sjc-00534185.corp.ebay.com"
 		var pushNotification;
 		pushNotification = window.plugins.pushNotification;
 
@@ -94,7 +93,6 @@
 		}
 
 		else {
-            console.log("ABC")
     		pushNotification.register(tokenHandler, errorHandler,{"badge":"true","sound":"true","alert":"true","ecb":"onNotificationAPN"});
 		}
 	}
