@@ -4,6 +4,7 @@
 <script type="text/javascript" src="js/index.js"></script>
 <script src="phonegap.js"></script>
 <script>
+    alert("SDASDS");
     window.location.href="https://10.109.192.160"
 	function onNotificationAPN(event) {
 	    if (event.alert) {
@@ -84,7 +85,7 @@
 	}
 
 	function onDeviceReady() {
-        //alert(window.plugins.pushNotification)
+        alert("DEVICE READY!")
 		var pushNotification;
 		pushNotification = window.plugins.pushNotification;
 
@@ -98,6 +99,7 @@
 	}
 
     function onBodyLoad() {
+        alert("BODY LOADED!")
         document.addEventListener('deviceready', onDeviceReady, false);
     }
 </script>
