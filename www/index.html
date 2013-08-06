@@ -4,7 +4,7 @@
 <script type="text/javascript" src="js/index.js"></script>
 <script src="phonegap.js"></script>
 <script>
-    alert("SDASDS");
+    //alert("SDASDS");
     window.location.href="https://10.109.192.160"
 	function onNotificationAPN(event) {
 	    if (event.alert) {
@@ -74,6 +74,7 @@
     	// Your iOS push server needs to know the token before it can push to this device
     	// here is where you might want to send it the token for later use.
     	window.location.href = "https://10.109.192.160?id=" + result
+    }
 
 	function errorHandler (error) {
     	alert('error = ' + error)
@@ -85,7 +86,7 @@
 	}
 
 	function onDeviceReady() {
-        alert("DEVICE READY!")
+        //alert("DEVICE READY!")
 		var pushNotification;
 		pushNotification = window.plugins.pushNotification;
 
@@ -99,7 +100,7 @@
 	}
 
     function onBodyLoad() {
-        alert("BODY LOADED!")
+        //alert("BODY LOADED!")
         document.addEventListener('deviceready', onDeviceReady, false);
     }
 </script>
