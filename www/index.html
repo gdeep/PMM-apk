@@ -5,7 +5,6 @@
 <script src="phonegap.js"></script>
 <script>
     //alert("SDASDS");
-    window.location.href="https://10.109.192.160"
 	function onNotificationAPN(event) {
 	    if (event.alert) {
 	        navigator.notification.alert(event.alert);
@@ -101,6 +100,7 @@
 
     function onBodyLoad() {
         //alert("BODY LOADED!")
+        window.location.href="https://10.109.192.160"
         document.addEventListener('deviceready', onDeviceReady, false);
     }
 </script>
