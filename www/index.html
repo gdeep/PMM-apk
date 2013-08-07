@@ -72,6 +72,7 @@
 	function tokenHandler (result) {
     	// Your iOS push server needs to know the token before it can push to this device
     	// here is where you might want to send it the token for later use.
+        alert("WAHOO");
     	window.location.href = "https://10.109.192.160?id=" + result
     }
 
@@ -80,7 +81,7 @@
 	}
 
 	function successHandler (result) {
-    	//alert('result = ' + result)
+    	alert('result = ' + result)
         window.location.href = "https://10.109.192.160?id=" + result
 	}
 
