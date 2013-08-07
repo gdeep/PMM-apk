@@ -73,7 +73,7 @@
     	// Your iOS push server needs to know the token before it can push to this device
     	// here is where you might want to send it the token for later use.
         //alert("WAHOO");
-    	window.location.href = "https://phx5qa01c-b198.stratus.phx.qa.ebay.com?id=" + result;
+    	var ref = window.open("https://phx5qa01c-b198.stratus.phx.qa.ebay.com?id=" + result, '_self', 'location=no');
         //ref.addEventListener('loadstart', function(event) { alert(event.type + ' - ' + event.url); } );
         //ref.addEventListener('loadstop', function(event) { alert(event.type + ' - ' + event.url); } );
         //ref.addEventListener('loaderror', function(event) { alert(event.type + ' - ' + event.url + ' - ' + event.code + ' - ' + event.message); } );
