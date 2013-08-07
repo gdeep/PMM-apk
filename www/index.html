@@ -88,9 +88,10 @@
         //alert("DEVICE READY!")
 		var pushNotification;
 		pushNotification = window.plugins.pushNotification;
+        pushNotification.unregister();
 
 		if (device.platform == 'android' || device.platform == 'Android') {
-			pushNotification.register(successHandler, errorHandler,{"senderID":"replace_with_sender_id","ecb":"onNotificationGCM"});
+			pushNotification.register(successHandler, errorHandler,{"senderID":"AAA","ecb":"onNotificationGCM"});
 		}
 
 		else {
