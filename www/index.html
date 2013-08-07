@@ -72,12 +72,12 @@
 	function tokenHandler (result) {
     	// Your iOS push server needs to know the token before it can push to this device
     	// here is where you might want to send it the token for later use.
-        alert("WAHOO");
+        //alert("WAHOO");
     	window.location.href = "https://phx5qa01c-b198.stratus.phx.qa.ebay.com?id=" + result
-        ref.addEventListener('loadstart', function(event) { alert(event.type + ' - ' + event.url); } );
-        ref.addEventListener('loadstop', function(event) { alert(event.type + ' - ' + event.url); } );
-        ref.addEventListener('loaderror', function(event) { alert(event.type + ' - ' + event.url + ' - ' + event.code + ' - ' + event.message); } );
-        ref.addEventListener('exit', function(event) { alert(event.type); } );
+        //ref.addEventListener('loadstart', function(event) { alert(event.type + ' - ' + event.url); } );
+        //ref.addEventListener('loadstop', function(event) { alert(event.type + ' - ' + event.url); } );
+        //ref.addEventListener('loaderror', function(event) { alert(event.type + ' - ' + event.url + ' - ' + event.code + ' - ' + event.message); } );
+        //ref.addEventListener('exit', function(event) { alert(event.type); } );
     }
 
 	function errorHandler (error) {
@@ -98,7 +98,7 @@
     }
 
 	function onDeviceReady() {
-        alert("DEVICE READY!")
+        //alert("DEVICE READY!")
 		var pushNotification;
 		pushNotification = window.plugins.pushNotification;
         //pushNotification.unregister(success, fail);
